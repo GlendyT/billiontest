@@ -1,4 +1,5 @@
 import SongCard from "@/components/songs/SongCard";
+import Heading from "@/components/ui/Heading";
 import { prisma } from "@/src/lib/prisma";
 
 async function getProducts(category: string) {
@@ -22,13 +23,10 @@ export default async function OrderPage({
 
   return (
     <>
+    <Heading>Welcome to BTS next BILLION CLUB </Heading>
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 items-start">
-
-        {products.map(product => (
-          <SongCard
-           key={product.id}
-           product={product}
-          />
+        {products.map((product) => (
+          <SongCard key={product.id} product={product} />
         ))}
       </div>
     </>
