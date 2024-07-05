@@ -8,7 +8,7 @@ export default function Logo() {
             <Image
              fill
              alt="Logotipo fresh"
-             src="/logo.svg"
+             src="/icon_bts.webp"
             />
         </div>
     </div>
