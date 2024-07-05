@@ -3,7 +3,7 @@ import AdminRoute from "./AdminRoute"
 
 const adminNavigation = [
   {url: '/admin/products', text: 'Productos', blank: false},
-  {url: '/order/cafe', text: 'Ver Quiosco', blank: true},
+  {url: '/order/bts', text: 'Ver Quiosco', blank: true},
 ]
 
 export default function AdminSidebar() {
