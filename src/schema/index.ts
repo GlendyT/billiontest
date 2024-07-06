@@ -18,8 +18,7 @@ export const ProductSchema = z.object({
     .transform((value) => parseFloat(value))
     .refine((value) => value > 0, { message: "Precio no válido" })
     .or(z.number().min(1, { message: "La Categoría es Obligatoria" })),
-
-  previousStreams: z
+  prevStreams: z
     .string()
     .trim()
     .transform((value) => parseFloat(value))

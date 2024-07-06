@@ -16,6 +16,7 @@ export default function EditProductForm({children}: {children : React.ReactNode}
         const data = {
             name: formData.get('name'),
             streams: formData.get('streams'),
+            prevStreams: formData.get('prevStreams'),
             categoryId: formData.get("categoryId"),
             image: formData.get("image")
         }

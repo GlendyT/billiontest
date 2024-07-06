@@ -1,38 +1,44 @@
 export const products = [
     {
-        name: "Café Caramel con Chocolate",
-        streams: 59.9,
-        image: "cafe_01",
+        name: "WildFlower",
+        streams: 12345678,
+        prevStreams: 12345678,
+        image: "members_01",
         categoryId: 1
       },
       {
-        name: "Paquete de 3 donas de Chocolate",
-        streams: 39.9,
-        image: "donas_01",
+        name: "The Astronaut",
+        streams: 12345678,
+        prevStreams: 12345678,
+        image: "members_01",
         categoryId: 2
       },
       {
-        name: "Paquete Galletas de Chocolate",
-        streams: 29.9,
-        image: "galletas_01",
+        name: "Haegum",
+        streams: 12345678,
+        prevStreams: 12345678,
+        image: "members_01",
         categoryId: 1
       },
       {
-        name: "Hamburguesa Sencilla",
-        streams: 59.9,
-        image: "hamburguesas_01",
+        name: "MORE",
+        streams: 12345678,
+        prevStreams: 12345678,
+        image: "members_01",
         categoryId: 2
       },
       {
-        name: "4 Rebanadas de Pay de Queso",
-        streams: 69.9,
-        image: "pastel_01",
+        name: "Set me Free PT2",
+        streams: 12345678,
+        prevStreams: 12345678,
+        image: "members_01",
         categoryId: 1
       },
       {
-        name: "Pizza Spicy con Doble Queso",
-        streams: 69.9,
-        image: "pizzas_01",
+        name: "Love me Again",
+        streams: 12345678,
+        prevStreams: 12345678,
+        image: "members_01",
         categoryId: 2
       },
 ]
