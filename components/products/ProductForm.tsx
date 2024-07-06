@@ -46,6 +46,19 @@ export default async function ProductForm({product}: ProducFormProps) {
                     defaultValue={product?.streams}
                 />
             </div>
+            <div className="space-y-2">
+                <label
+                    className="text-slate-800"
+                    htmlFor="prevStreams"
+                >PrevStreams:</label>
+                <input
+                    id="prevStreams"
+                    name="prevStreams"
+                    className="block w-full p-3 bg-slate-100"
+                    placeholder="Streams Cancion"
+                    defaultValue={product?.streams}
+                />
+            </div>
 
             <div className="space-y-2">
                 <label

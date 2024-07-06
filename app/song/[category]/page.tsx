@@ -21,10 +21,11 @@ export default async function OrderPage({
 }) {
   const products = await getProducts(params.category);
 
+
   return (
     <>
     <Heading>Welcome to BTS next BILLION CLUB </Heading>
-      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-1 2xl:grid-cols-3 gap-1 items-start">
         {products.map((product) => (
           <SongCard key={product.id} product={product} />
         ))}

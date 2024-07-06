@@ -1,5 +1,5 @@
 import { ProductsWithCategory } from "@/app/admin/products/page";
-import { Category, Product } from "@prisma/client";
+import { formatearCantidad } from "@/src/utils";
 import Link from "next/link";
 
 type ProductTableProps = {
@@ -25,7 +25,13 @@ export default function ProductTable({ products }: ProductTableProps) {
                     scope="col"
                     className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                   >
-                    Precio
+                    Streams
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                  >
+                    PrevStreams
                   </th>
                   <th
                     scope="col"
@@ -42,7 +48,8 @@ export default function ProductTable({ products }: ProductTableProps) {
                 {products.map((product) => (
                   <tr key={product.id}>
                     <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">{product.name}</td>
-                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{product.streams}</td>
+                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{formatearCantidad(product.streams)}</td>
+                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{formatearCantidad(product.prevStreams)}</td>
                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{product.category.name}</td>
                     <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
 

@@ -12,6 +12,7 @@ CREATE TABLE "Product" (
     "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
     "streams" DOUBLE PRECISION NOT NULL,
+    "prevStreams" DOUBLE PRECISION NOT NULL,
     "image" TEXT NOT NULL,
     "categoryId" INTEGER NOT NULL,
 
